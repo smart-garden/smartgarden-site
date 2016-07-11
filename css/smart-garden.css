@@ -1,0 +1,225 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+/* Global Styles */
+
+html, body {
+    height: 100%;
+}
+body {
+    padding-top: 0;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.img-portfolio {
+    margin-bottom: 30px;
+}
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 100vh;
+}
+header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner {
+    height: 100%;
+}
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img, .img-related {
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+/*END START BOOTSTRAP CODE
+  START CUSTOM CODE*/
+
+
+/*Fonts*/
+
+
+/*@import url("../css/fonts.css");*/
+
+header .carousel-caption h2 {
+    font-family: 'quicksandbold', sans-serif;
+    font-size: 10vh;
+    height: auto;
+    letter-spacing: -.05em;
+    text-shadow: 0px 0px 17px rgba(23, 23, 23, 0.75);
+    z-index: 2;
+}
+header .carousel-caption {
+    height: 100vh;
+    display: flex !important;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+ol.carousel-indicators {
+    bottom: 0;
+    margin-bottom: 4px;
+}
+header h2> small {
+    color: #a1f1fb !important;
+}
+.right-footer > * {
+    margin: 0 !important;
+    width: 100%;
+    text-align: right;
+}
+footer {
+    background-color: #333;
+    margin: 0;
+    height: 130px;
+    color: #bbbbbb;
+    -webkit-font-smoothing: antialiased;
+}
+footer .container, footer .row, footer div[class*='col-xs'] {
+    height: 100%;
+}
+.col-xs-4.right-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #232323;
+}
+.right-footer ul.list-inline {
+    width: 100%;
+    text-align: right;
+}
+.col-xs-8.left-footer {
+    display: flex;
+    align-items: center;
+}
+header a.carousel-control {
+    transition: opacity .5s ease;
+    opacity: .5;
+}
+.btn {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cbea96+0,91bf7a+100 */
+  background: #cbea96; /* Old browsers */
+  background: -moz-linear-gradient(top,  #cbea96 0%, #91bf7a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #cbea96 0%,#91bf7a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #cbea96 0%,#91bf7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbea96', endColorstr='#91bf7a',GradientType=0 ); /* IE6-9 */
+  font-family: 'quicksandbold',sans-serif;
+  transition: all .3s ease;
+}
+.btn-default {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform: rotateY(60deg);
+  transform-style: preserve-3d;
+  text-transform: uppercase;
+  border-bottom: .2em solid #456f56 !important;
+  transform: rotateX(20deg);
+  border: 1px solid #a1caa4;
+}
+a.btn.btn-default:hover {
+  opacity: .8;
+}
+
+.full-width .fa.fa-stack-1x {
+  color: #80ba84;
+}
+.full-width .fa.fa-stack-2x {
+  background: #cbea96;
+  background: -moz-linear-gradient(top, #cbea96 0%, #91bf7a 100%);
+  background: -webkit-linear-gradient(top, #cbea96 0%,#91bf7a 100%);
+  background: linear-gradient(to bottom, #cbea96 0%,#91bf7a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbea96', endColorstr='#91bf7a',GradientType=0 );
+  border-radius: 5%;
+  transition: all .5s ease;
+  color: #fff;
+}
+
+.full-width div.col-lg-8:hover .fa.fa-stack-2x {
+  border-radius: 50%;
+}
+.full-width .container > div[class*='col-'] {
+    padding: 25px 0;
+}
+
+.row.flex-row {
+  display: flex;
+  align-items: center;
+}
+.full-width div.white-bg {
+  background-color: rgba(255,255,255,0.95);
+  color: #338052;
+  border-radius: 2px;
+  padding: 15px 30px;
+}
+
+
+.white-bg h1.page-header {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row.full-width {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  .sm-text-center {
+    text-align: center !important;
+  }
+}
