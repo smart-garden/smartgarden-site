@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Smart Garden</a>
+            <a class="navbar-brand" href="index.php">Smart Garden</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -21,6 +21,9 @@
                     <a href="services.php">Team</a>
                 </li>
                 <li>
+                    <a href="contact.php">FAQ</a>
+                </li>
+                <li>
                     <a href="contact.php">Contact</a>
                 </li>
 
@@ -28,10 +31,10 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="blog-home-1.html">Blog Home 1</a>
+                            <a href="#">Recent posts</a>
                         </li>
                         <li>
-                            <a href="blog-post.html">Blog Post</a>
+                            <a href="#">Archive</a>
                         </li>
                     </ul>
                 </li>

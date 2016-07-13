@@ -18,7 +18,7 @@ include 'inc/nav.php';
                     <small>Subheading</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.php">Home</a>
                     </li>
                     <li class="active">Contact</li>
                 </ol>
@@ -28,10 +28,65 @@ include 'inc/nav.php';
 
         <!-- Content Row -->
         <div class="row">
-            <!-- Map Column -->
-            <div class="col-md-8">
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:100px;'><div id='gmap_canvas' style='height:440px;width:100px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://privacypolicygenerator.info">privacy policy example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(32.8753618,-117.23586219999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(32.8753618,-117.23586219999999)});infowindow = new google.maps.InfoWindow({content:'<strong>Smart Garden UCSD Office</strong><br>9500 Gilman Dr, La Jolla CA 92121<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-            </div>
+
+          <div class="col-md-8">
+              <h3>Send us a Message</h3>
+              <form name="sentMessage" id="contactForm" novalidate>
+                  <div class="control-group form-group">
+                      <div class="controls">
+                          <label>Full Name:</label>
+                          <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                          <p class="help-block"></p>
+                      </div>
+                  </div>
+                  <div class="control-group form-group">
+                      <div class="controls">
+                          <label>Phone Number:</label>
+                          <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                      </div>
+                  </div>
+                  <div class="control-group form-group">
+                      <div class="controls">
+                          <label>Email Address:</label>
+                          <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                      </div>
+                  </div>
+                  <div class="control-group form-group">
+                      <div class="controls">
+                          <label>Reason for reaching out:</label>
+                          <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Reasons
+                            <span class="caret"></span></button>
+
+                            <ul class="dropdown-menu other-box" role="menu" aria-labelledby="reason-menu">
+                              <li class="dropdown-header">Infomative</li>
+                              <li role="presentation"><a class="other-click" role="menuitem" >Request Press Packet</a></li>
+                              <li role="presentation"><a class="other-click" role="menuitem" >Request Investor Packer</a></li>
+                              <li role="presentation" class="divider"></li>
+                              <li class="dropdown-header">Work for Us</li>
+                              <li role="presentation"><a class="other-click" role="menuitem" >Interested Engineer</a></li>
+                              <li role="presentation"><a class="other-click" role="menuitem" >Interested Computer Programmer</a></li>
+                              <li role="presentation"><a class="other-click" role="menuitem" >Interested Professional of another type</a></li>
+                              <li role="presentation" class="divider"></li>
+                              <li role="presentation"><a class="other-click" role="menuitem" >Other</a></li>
+                            </ul>
+                            <input type="text" class="form-control hidden" id="reason">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="control-group form-group">
+                      <div class="controls">
+                          <label>Message:</label>
+                          <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                      </div>
+                  </div>
+                  <div id="success"></div>
+                  <!-- For success/fail messages -->
+                  <button type="submit" class="btn btn-default btn-block">Send Message</button>
+              </form>
+          </div>
+
+
             <!-- Contact Details Column -->
             <div class="col-md-4">
                 <h3>Contact Details</h3>
@@ -63,45 +118,6 @@ include 'inc/nav.php';
         </div>
         <!-- /.row -->
 
-        <!-- Contact Form -->
-        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-        <div class="row">
-            <div class="col-md-8">
-                <h3>Send us a Message</h3>
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Full Name:</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Phone Number:</label>
-                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Email Address:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Message:</label>
-                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-                        </div>
-                    </div>
-                    <div id="success"></div>
-                    <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-
-        </div>
-        <!-- /.row -->
 
         <hr>
 
@@ -110,8 +126,30 @@ include 'inc/nav.php';
 <?php
   include 'inc/footer.php';
  ?>
+ <!-- contact form script -->
+ <script src="js/contact_me.js"></script>
 
+ <!-- apply the validation to the form -->
+ <script>
+   $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+ </script>
 
+ <script type="text/javascript">
+     function dropdownClick(name) {
+       alert("fired click");
+       if (!$(name).html() == 'Other') {
+         $('#reason').val($(name).html())
+         .addClass('hidden');
+       }  else {
+         $('reason').removeClass('hidden');
+       }
+     }
+     $(document).ready(function() {
+        $('a.other-click').each(function() {
+           $(this).bind("click", dropdownClick(this));
+        });
+     });
+ </script>
 
 </body>
 

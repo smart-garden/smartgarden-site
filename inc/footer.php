@@ -21,10 +21,32 @@
 
 
 <!-- jQuery -->
-<script src="bower_components/jquer/dist/jquery.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="bower_components/boostrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- Parallax.js -->
-<script src="/bower_components/parallax/index.js"></script>
+<script src="bower_components/enllax.js/jquery.enllax.min.js"></script>
+
+<!-- Boostrap form validation  -->
+<script src="bower_components/jqBootstrapValidation/dist/jqBootstrapValidation-1.3.7.min.js">
+
+</script>
+
+<!-- Nav UI effect  -->
+<script type="text/javascript">
+$(function() {
+  //caches a jQuery object containing the header element
+  var nav = $("nav.navbar-fixed-top");
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= $(window).height())) {
+          nav.addClass("navbar-inverse");
+      } else {
+          nav.removeClass("navbar-inverse");
+      }
+  });
+});
+</script>
